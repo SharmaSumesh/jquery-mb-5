@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1
+        {
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+
+        }
+        #div2
+        {
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+
+        }
+        #div3
+        {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <ul>
+        <li>fadeIN</li>
+        <li>fadeout</li>
+        <li>fadeToggle</li>
+        <li>fadeTo</li>
+    </ul> -->
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4" style="width: 50px; 
+    height: 80px;
+    display:none;
+    background-color:blue;"></div>
+    <div id="div5" style="height: 30px;width: 30px;background-color: yellow;"></div>
+    <button>fadeIN</button>
+</body>
+<script>
+$(document).ready(function()
+{
+$("button").click(function()
+{
+    // $("#div4").fadeIn(3000);
+    // $("#div2").fadeOut("slow");
+    // $("#div3").fadeOut(4000);
+    //fadeTo
+    //$("#div3").fadeTo("speed",opacity);
+   $("#div1").fadeTo("slow",0.10);
+   $("#div2").fadeTo("slow",0.3);
+   $("#div3").fadeTo("slow",0.16);
+
+})
+})
+</script>
+</html>

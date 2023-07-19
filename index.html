@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div id="first"></div>
+    <h1>heading</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatibus est consectetur ut nemo dolore ipsam ipsa, accusantium numquam, ab voluptatum suscipit ipsum!</p>
+    <button>alert</button>
+    <button>hide</button>
+    <button></button>
+</body>
+<script>
+//      $(document).ready(function(
+
+// )
+// {
+//     //write code here
+// })
+    // $(document).ready(function(
+
+    // )
+    // {
+    //     alert("Hello");
+    // })
+    // document.getElementById("first") // js
+    // $("#first") // jquery
+// $(document).ready(function()
+// {
+//     $("button").click(function()
+//     {
+//         alert("hello");
+//         $("p").hide();
+//     })
+// })
+// selector in jQuery
+// $("*") = >select all Element
+// $("this") = >select html Element 
+// $("p:first")=>select the p first Element 
+$(document).ready(function()
+    {
+        $("button").click(function()
+        {
+            $("p:first").hide();
+        });
+    });
+
+</script>
+</html>

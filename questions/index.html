@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="jquery.js"></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>alert</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quos corporis accusantium esse. Veritatis ut magnam rerum, velit unde voluptatibus at ducimus eaque.</p>
+    <button>alert</button>
+    <button id="btn2">hide</button>
+</body>
+<script>
+    $(document).ready(function()
+{
+    //alert button
+    $("button").click(function()
+    {
+      alert("hello world");
+    })
+    // hide p 
+    $("#btn2").click(function()
+    {
+        $("p").hide();
+    })
+})
+</script>
+
+</html>

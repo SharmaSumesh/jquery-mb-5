@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <style>
+        #start,#data
+        {
+            background-color: red;
+            color:white;
+            text-align: center;
+            padding: 10px;
+        }
+        #data
+        {
+            padding: 40px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button id="stop">stop</button>
+    <div id="start">start</div>
+    <div id="data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore?</div>
+ -->
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui tempore magnam ipsam ab repellendus, nemo, sed numquam atque quas, saepe molestiae voluptates doloribus!</p>
+ <button>hide and show</button>
+</body>
+<script>
+    $(document).ready(function()
+    {
+        // $("#start").click(function()
+        // {
+        //     $("#data").slideDown(5000);
+        // });
+        // $("#stop").click(function()
+        // {
+        //     $("#data").stop();
+        // })
+            // HIDE AND SHOW BUTTONS
+            $("button").click(function(){
+            if($("p").is(':hidden'))
+            {
+                $("p").show();
+            }
+            else
+            {
+                $("p").hide();
+            }
+            })
+
+
+    })
+
+</script>
+</html>

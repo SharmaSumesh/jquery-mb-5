@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis labore laboriosam porro!</p>
+    <div style="height: 50px;width: 50px;background-color: red;"></div>
+    <button>send animation</button>
+</body>
+<script>
+    // $(selctor).animate({parmerter},speed,callback)
+    $("document").ready(function()
+    {
+        $("button").click(function()
+        {
+            // $("div").animate({height:'150px',width:'200px'})
+            // $("div").animate({height:'toggle'})
+            // $("div").animate({width:"toggle"})
+            // var div = $("div");
+            // div.animate({height:'200px',opacity:'0.4'},"slow");
+            // div.animate({width:'300px',opacity:'0.7'},"slow");
+            $("p").animate({fontSize:'25px'},"fast");
+
+        })
+    })
+</script>
+</html>

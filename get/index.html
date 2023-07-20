@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- get the value -->
+    <!-- <p><span>Lorem ipsum, dolor sit amet consectetur</span> adipisicing elit. Sunt minus eveniet nostrum hic, suscipit possimus sint soluta cum optio necessitatibus maiores consequatur, in obcaecati illum incidunt dolorem. Incidunt delectus, unde facere labore quam adipisci!</p>
+    <button id="btn1">text</button>
+    <button id="btn2">show html</button> -->
+    <!-- value -->
+    <!-- <input type="text" id="test" value = "sumesh">
+    <button>show</button> -->
+    <!-- set the value:- -->
+    <p id="test1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem.</p>
+    <p id="test2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo odio fuga earum.</p>
+    <input type="text" id="test3" value="sumesh">
+    <button id="btn1">set the text</button>
+    <button id="btn2">html</button>
+    <button id="btn3">value</button>
+
+    
+</body>
+<script>
+    // get method
+    $(document).ready(function()
+    {
+        $("#btn1").click(function()
+        {
+            alert($("p").text());
+        })
+        $("#btn2").click(function()
+        {
+            alert($("p").html());
+        })
+        $("button").click(function()
+        {
+            console.log($("#test").val());
+        })
+    })
+    // set method
+    $(document).ready(function()
+    {
+        $("#btn1").click(function()
+        {
+            alert($("#test1").text("hello my name is sumesh"));
+        })
+        $("#btn2").click(function()
+        {
+            alert($("#test2").html("<h1>hello india</h1>"));
+        })
+        $("#btn3").click(function()
+        {
+            console.log($("#test3").val("rohit kumar"));
+        })
+    })
+
+</script>
+
+</html>

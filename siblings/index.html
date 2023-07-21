@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        sumesh
+        <span>hello</span>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+    </div>
+</body>
+<script>
+    //siblings:-
+    // the siblings method is used return only siblings Element of the selected div and Element
+    // $(document).ready(function()
+    // {
+    //     $("h1,h2").siblings().css({"color":"red"})
+    // })
+    // next:- 
+    // $(document).ready(function()
+    // {
+    //     $("h1").next().css({"color":"red"})
+
+    // })
+    //next all
+    // next all is used to return the next siblings Element of the selected Element 
+    // $(document).ready(function()
+    // {
+    //     $("h1").nextAll().css({"color":"red"})
+    // })
+    // nextuntil
+    $(document).ready(function()
+    {
+        $("h1").nextUntil("h6").css({"color":"red"})
+    })
+
+</script>
+</html>

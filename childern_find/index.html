@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first
+        {
+            display: block;
+            background-color: red;
+            color:white;
+            margin: 15px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="first">
+        hello my name is sumesh
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed magnam voluptatum culpa?<span>hi name is sumesh</span></p>
+        <p>p child<span>span elements</span></p>
+    </div>
+</body>
+<script>
+$(document).ready(function()
+{
+    $("div").children().css({"color":"yellow"})
+})
+</script>
+</html>
